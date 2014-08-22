@@ -29,7 +29,7 @@ shoppingList += "Baking Powder"
 shoppingList += ["Chocolate Spread","Cheese","Butter"]
 var firstItem = shoppingList[0]
 shoppingList[0] = "Six eggs"
-//shoppingList[0...3] = ["Bananas","Apples"]
+shoppingList[0...3] = ["Bananas","Apples"]
 shoppingList
 
 if (onSaleInferred) {
@@ -37,6 +37,7 @@ if (onSaleInferred) {
 } else {
     println("\(nameInferred) at regular price: \(priceInferred)!")
 }
+
 
 
 
