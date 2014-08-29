@@ -42,8 +42,18 @@ if (onSaleInferred) {
     println("\(nameInferred) at regular price: \(priceInferred)!")
 }
 
+/****************************************/
+//Dictoinnary
 
+let array:Array<Int> = [1,2,3,4]
+let dictionary:Dictionary<String,Int> = ["dog":1,"elephent":2,"fog":3]
 
+var airports:[String: String] = ["Bangkok":"BKK","Donmuang":"DM","Suwannabhumi":"SWB","London":"LHR"]
+
+//update
+
+if let oldValue = airports.updateValue("Dublin International", forKey: "DUB")
+println("The old value for DUB was \(oldValue).")
 
 
 
