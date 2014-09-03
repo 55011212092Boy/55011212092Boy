@@ -6,8 +6,8 @@ class animal{
     }
     func addAnimal()->[String:String]{
         name["Monkey"] = "Banana"
-        name["Car"] = "Grass"
-        name["Monkey"] = "Banana"
+        name["Cat"] = "Grass"
+        name["Chicken"] = "Rice"
         return name
     }
 }
