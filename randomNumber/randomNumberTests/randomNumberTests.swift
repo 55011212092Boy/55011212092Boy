@@ -1,6 +1,6 @@
 //
-//  TipcalculatorTests.swift
-//  TipcalculatorTests
+//  randomNumberTests.swift
+//  randomNumberTests
 //
 //  Created by student on 9/24/14.
 //  Copyright (c) 2014 pasakorn. All rights reserved.
@@ -9,7 +9,7 @@
 import UIKit
 import XCTest
 
-class TipcalculatorTests: XCTestCase {
+class randomNumberTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
