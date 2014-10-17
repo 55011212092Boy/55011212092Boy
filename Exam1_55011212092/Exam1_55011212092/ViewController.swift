@@ -21,9 +21,9 @@ class ViewController: UIViewController,UITableViewDelegate{
     let cellIdentifier = "cellIdentifier"
     var tableData = ["PriceUp","PriceDown","Cell3Text"]
     
-    let inputName = "BTS"
-    let inputVolume = 400
-    let inputPrice = 2.32
+    var inputName:String = "BTS"
+    var inputVolume:Int = 400
+    var inputPrice:Double = 2.32
     func refreshUI(){
         textName.text = String(inputName)
         textVolume.text = String(format:"%d",inputVolume)
@@ -33,11 +33,16 @@ class ViewController: UIViewController,UITableViewDelegate{
     
     
     @IBAction func sumShare(sender: AnyObject) {
-        //let sum = inputVolume * inputPrice
-        //textTotal.text = sum
+        var v = Double((textVolume.text as NSString).doubleValue);
+        var p = Double((textPrice.text as NSString).doubleValue);
+        
+        var sum = v*p;
+        
+        textTotal.text = "\(sum)"
     }
     
     @IBAction func resultPro(sender: AnyObject) {
+        
     }
     
     override func viewDidLoad() {
