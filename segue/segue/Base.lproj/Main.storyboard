@@ -7,25 +7,20 @@
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
                 <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="segue" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Unknow" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="egD-IT-eVh">
-                                <rect key="frame" x="156" y="223" width="64" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U2q-Tt-yaF">
-                                <rect key="frame" x="16" y="111" width="343" height="44"/>
+                                <rect key="frame" x="15" y="113" width="291" height="44"/>
                                 <items>
-                                    <navigationItem title="Click Go" id="tuf-QT-veC">
+                                    <navigationItem title="One" id="tuf-QT-veC">
                                         <barButtonItem key="rightBarButtonItem" title="Color" id="MXp-MD-AeK">
                                             <connections>
                                                 <segue destination="THv-co-yvv" kind="show" identifier="mySegue" id="LN4-t6-z3T"/>
@@ -34,79 +29,108 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Unknow" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="egD-IT-eVh">
+                                <rect key="frame" x="111" y="221" width="112" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="rIu-sX-gOo"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <outlet property="colorLabel" destination="egD-IT-eVh" id="5ve-Ve-nKv"/>
+                        <outlet property="colorLabel" destination="egD-IT-eVh" id="xd6-Qn-Me7"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="925.5" y="377.5"/>
+            <point key="canvasLocation" x="925" y="377"/>
         </scene>
-        <!--View Controller-->
+        <!--Color Two View Controller-->
         <scene sceneID="Bdb-f1-XEz">
             <objects>
-                <viewController id="THv-co-yvv" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fz8-kG-tTH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="THv-co-yvv" customClass="colorTwoViewController" customModule="segue" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="scg-6i-frC"/>
                         <viewControllerLayoutGuide type="bottom" id="OO6-3b-ZbQ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="XD6-xo-pxw">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hE8-s1-qPq">
-                                <rect key="frame" x="16" y="112" width="343" height="44"/>
+                                <rect key="frame" x="16" y="112" width="298" height="44"/>
                                 <items>
-                                    <navigationItem title="Title" id="GPh-aE-d14">
-                                        <barButtonItem key="rightBarButtonItem" title="Save" id="284-V9-Da1"/>
+                                    <navigationItem title="Two" id="GPh-aE-d14">
+                                        <barButtonItem key="rightBarButtonItem" title="Save" id="284-V9-Da1">
+                                            <connections>
+                                                <action selector="saveColor:" destination="THv-co-yvv" id="cDI-0t-tUr"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HGj-bL-dQO">
-                                <rect key="frame" x="171" y="203" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Unknow" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HGj-bL-dQO">
+                                <rect key="frame" x="139" y="203" width="64" height="23"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZRU-7x-V7q">
-                                <rect key="frame" x="62" y="319" width="30" height="30"/>
+                                <rect key="frame" x="57" y="319" width="58" height="38"/>
+                                <color key="backgroundColor" red="0.75282308704094203" green="1" blue="0.94937015424182003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="Red">
                                     <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="colorSelectButton:" destination="THv-co-yvv" eventType="touchUpInside" id="vod-kx-0dk"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qFB-Fp-hfc">
-                                <rect key="frame" x="169" y="319" width="42" height="30"/>
+                                <rect key="frame" x="148" y="319" width="55" height="38"/>
+                                <color key="backgroundColor" red="1" green="0.9575237112477748" blue="0.93618268176675967" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="Green">
                                     <color key="titleColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="colorSelectButton:" destination="THv-co-yvv" eventType="touchUpInside" id="4cz-12-WCI"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wik-a3-aHo">
-                                <rect key="frame" x="276" y="319" width="31" height="30"/>
+                                <rect key="frame" x="241" y="319" width="54" height="38"/>
+                                <color key="backgroundColor" red="0.94469270866929911" green="1" blue="0.77974229686255392" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="Blue">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="colorSelectButton:" destination="THv-co-yvv" eventType="touchUpInside" id="qWL-HU-BmC"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="colorLabel" destination="HGj-bL-dQO" id="7YJ-uo-hiz"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fz8-kG-tTH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1364.5" y="377.5"/>
+            <point key="canvasLocation" x="1364" y="377"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="zQu-gO-0Hm">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eoH-a2-85A" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="IDR-c3-Hny" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Zl1-nn-o8O">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -116,7 +140,6 @@
                         <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="Oa6-GT-RO7"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="eoH-a2-85A" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="484.5" y="441.5"/>
         </scene>
