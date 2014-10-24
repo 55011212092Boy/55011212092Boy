@@ -19,6 +19,16 @@ class ViewController: UIViewController,ColorTwoViewControllerDelegate {
     }
     func  myVCDidFinish(controller: colorTwoViewController, text: String) {
         colorLabel.text = "Color : " +  text
+        if(text=="Red"){
+            colorLabel.backgroundColor = UIColor.redColor()
+        }
+        else if(text=="Green"){
+            colorLabel.backgroundColor = UIColor.greenColor()
+        }
+        else if(text=="Blue"){
+            colorLabel.backgroundColor = UIColor.blueColor()
+        }
+        
         controller.navigationController?.popViewControllerAnimated(true)
     }
     
