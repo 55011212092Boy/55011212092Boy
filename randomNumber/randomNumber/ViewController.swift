@@ -24,20 +24,26 @@ class ViewController: UIViewController {
     
     @IBAction func oneAc(sender: AnyObject) {
         i++
+        oneLB.text = "\(i)"
     }
     @IBAction func twoAc(sender: AnyObject) {
         j++
+        twoLB.text = "\(j)"
     }
     
     @IBAction func three(sender: AnyObject) {
         
         k++
+        threeLB.text = "\(k)"
     }
     
     @IBAction func resetAc(sender: AnyObject) {
         i = 0
         j = 0
         k = 0
+        oneLB.text = "\(i)"
+        twoLB.text = "\(j)"
+        threeLB.text = "\(k)"
     }
     override func viewDidLoad() {
         super.viewDidLoad()

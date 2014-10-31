@@ -7,30 +7,34 @@
 //
 
 import UIKit
+protocol textTVCDelegate{
+    func myVCidFinish(controller:ViewController,text:String)
+}
 
+class textTwoviewController: UIViewController {
 
-class textTwoviewController: UIViewController,textTVCDelegate {
-
-    @IBOutlet  var textLabel: UILabel!
+    var delegate:textTVCDelegate? = nil
+    var textString = ""
     
+    @IBOutlet weak var tfUser: UITextField!
+    @IBOutlet weak var fnLabel: UILabel!
     
+    @IBAction func saveBT(sender: UIBarButtonItem) {
+        if(delegate != nil){
+            delegate!.myVCidFinish(self, text: fnLabel!.text!)
+        }
+        
+    }
+    @IBAction func okBT(sender: UIButton) {
+        fnLabel.text = sender.titleLabel!.text
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        fnLabel.text = textString
     }
-    func myVCidFinish(controller: ViewController, text: String) {
-        textLabel.text = "wellcome :" + text
-        controller.navigationController?.popViewControllerAnimated(true)
-    }
-    override func  prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "mySegue"{
-            let vc = segue.destinationViewController as ViewController
-            vc.textString = textLabel.text!
-            vc.delegate = self
-            
-    }
-
+   
     
 
     /*

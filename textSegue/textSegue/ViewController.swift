@@ -7,34 +7,29 @@
 //
 
 import UIKit
-protocol textTVCDelegate{
-    func myVCidFinish(controller:ViewController,text:String)
-}
-
 class ViewController: UIViewController {
     
-    @IBOutlet var tfUser: UITextField!
     
-    var delegate:textTVCDelegate? = nil
-    var textString = ""
+    @IBOutlet weak var textLabel: UILabel!
     
-    
-
-    @IBAction func loginBT(sender: UIButton) {
-        sender.select(tfUser)
-        if(delegate != nil){
-            delegate!.myVCidFinish(self, text: tfUser!.text!)
-        }
-        
-        
+   
+    func myVCidFinish(controller: ViewController, text: String) {
+        textLabel.text = "wellcome :" + text
+        controller.navigationController?.popViewControllerAnimated(true)
     }
-    
+    override func  prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "mySegue"{
+            let vc = segue.destinationViewController as ViewController
+            
+        }
+
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        tfUser.text = textString
+        
     }
 
 
