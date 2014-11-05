@@ -40,6 +40,11 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" id="l5y-re-sIg">
+                        <barButtonItem key="leftBarButtonItem" title="Delete" id="UCc-eI-dyL">
+                            <connections>
+                                <action selector="deleltItem:" destination="vXZ-lx-hvc" id="sEr-bu-KRc"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Add" id="wly-t2-D6n">
                             <connections>
                                 <action selector="addItem:" destination="vXZ-lx-hvc" id="XZd-Ju-SwZ"/>
@@ -53,7 +58,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="977.25" y="522.375"/>
+            <point key="canvasLocation" x="989.25" y="522.375"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="QIb-ix-9m1">

@@ -37,9 +37,6 @@ class ViewController: UIViewController,UITableViewDataSource {
             completion: nil)
         
     }
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "\"Shopping List\""

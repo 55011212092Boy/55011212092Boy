@@ -11,19 +11,39 @@ import CoreData
 
 class ViewController: UIViewController,UITableViewDataSource {
     
-    var items = [String]()
-    //var items = [NSManagedObject]()
+   // var items = [String]()
+    var items = [NSManagedObject]()
 
     @IBOutlet weak var tableView: UITableView!
     
+    @IBAction func deleltItem(sender: AnyObject) {
+        
+        let appDel: AppDelegate = UIApplication.sharedApplication().delegate as AppDelegate
+        let context:NSManagedObjectContext = appDel.managedObjectContext!
+        
+        let request = NSFetchRequest(entityName: "Item")
+            
+            if let tv = tableView {
+                var bas: NSManagedObject!
+                for bas : AnyObject in items
+                {
+                    context.deleteObject(bas as NSManagedObject)
+                }
+                items.removeAll(keepCapacity: false)
+                tv.reloadData()
+            }
+            
+ 
+        
+    }
     @IBAction func addItem(sender: AnyObject) {
         var alert = UIAlertController(title: "New item", message: "Add a new item", preferredStyle: .Alert)
         
         let saveAction = UIAlertAction(title: "Save", style: .Default) { (action: UIAlertAction!) -> Void in
             
             let textField = alert.textFields![0] as UITextField
-            self.items.append(textField.text)
-            //self.saveName(textField.text)
+            //self.items.append(textField.text)
+            self.saveName(textField.text)
             self.tableView.reloadData()
             
         }
@@ -40,8 +60,9 @@ class ViewController: UIViewController,UITableViewDataSource {
         presentViewController(alert, animated: true, completion: nil)
         
     }
+    
     //add
-    /*func saveName(name: String){
+    func saveName(name: String){
         
         let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
         let managedContext = appDelegate.managedObjectContext!
@@ -55,7 +76,7 @@ class ViewController: UIViewController,UITableViewDataSource {
             println("Could not save \(error), \(error?.userInfo)")
         }
         items.append(item)
-    }*/
+    }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return items.count
@@ -64,15 +85,15 @@ class ViewController: UIViewController,UITableViewDataSource {
         
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell") as UITableViewCell
         
-       cell.textLabel!.text = items[indexPath.row]
+      // cell.textLabel!.text = items[indexPath.row]
         
-        //let item = items[indexPath.row]
-        //cell.textLabel!.text = item.valueForKey("name") as String?
+        let item = items[indexPath.row]
+        cell.textLabel!.text = item.valueForKey("name") as String?
         
         return cell
     }
     
-    /*override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
         let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
@@ -88,7 +109,7 @@ class ViewController: UIViewController,UITableViewDataSource {
         } else {
             println("Could not save \(error), \(error!.userInfo)")
         }
-    }*/
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
