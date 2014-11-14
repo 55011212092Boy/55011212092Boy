@@ -1,0 +1,451 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3F0D291D1A15DA7D00841586 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0D291C1A15DA7D00841586 /* AppDelegate.swift */; };
+		3F0D29201A15DA7D00841586 /* gameDog.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3F0D291E1A15DA7D00841586 /* gameDog.xcdatamodeld */; };
+		3F0D29221A15DA7D00841586 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0D29211A15DA7D00841586 /* ViewController.swift */; };
+		3F0D29251A15DA7D00841586 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F0D29231A15DA7D00841586 /* Main.storyboard */; };
+		3F0D29271A15DA7D00841586 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F0D29261A15DA7D00841586 /* Images.xcassets */; };
+		3F0D292A1A15DA7D00841586 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F0D29281A15DA7D00841586 /* LaunchScreen.xib */; };
+		3F0D29361A15DA7E00841586 /* gameDogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0D29351A15DA7E00841586 /* gameDogTests.swift */; };
+		3F0D29B71A15F58400841586 /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F0D29B61A15F58400841586 /* bg.png */; };
+		3F0D29B91A15FC1500841586 /* ddog.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F0D29B81A15FC1500841586 /* ddog.png */; };
+		3F0D29BB1A15FEDD00841586 /* dog2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F0D29BA1A15FEDD00841586 /* dog2.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3F0D29301A15DA7E00841586 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F0D290F1A15DA7D00841586 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F0D29161A15DA7D00841586;
+			remoteInfo = gameDog;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3F0D29171A15DA7D00841586 /* gameDog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gameDog.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F0D291B1A15DA7D00841586 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F0D291C1A15DA7D00841586 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3F0D291F1A15DA7D00841586 /* gameDog.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = gameDog.xcdatamodel; sourceTree = "<group>"; };
+		3F0D29211A15DA7D00841586 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3F0D29241A15DA7D00841586 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3F0D29261A15DA7D00841586 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3F0D29291A15DA7D00841586 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		3F0D292F1A15DA7E00841586 /* gameDogTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = gameDogTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F0D29341A15DA7E00841586 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F0D29351A15DA7E00841586 /* gameDogTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gameDogTests.swift; sourceTree = "<group>"; };
+		3F0D29B61A15F58400841586 /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bg.png; path = ../../bg.png; sourceTree = "<group>"; };
+		3F0D29B81A15FC1500841586 /* ddog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ddog.png; path = ../../imageDog/ddog.png; sourceTree = "<group>"; };
+		3F0D29BA1A15FEDD00841586 /* dog2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = dog2.png; path = ../../imageDog/dog2.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3F0D29141A15DA7D00841586 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F0D292C1A15DA7E00841586 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3F0D290E1A15DA7D00841586 = {
+			isa = PBXGroup;
+			children = (
+				3F0D29191A15DA7D00841586 /* gameDog */,
+				3F0D29321A15DA7E00841586 /* gameDogTests */,
+				3F0D29181A15DA7D00841586 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3F0D29181A15DA7D00841586 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3F0D29171A15DA7D00841586 /* gameDog.app */,
+				3F0D292F1A15DA7E00841586 /* gameDogTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3F0D29191A15DA7D00841586 /* gameDog */ = {
+			isa = PBXGroup;
+			children = (
+				3F0D291C1A15DA7D00841586 /* AppDelegate.swift */,
+				3F0D29211A15DA7D00841586 /* ViewController.swift */,
+				3F0D29231A15DA7D00841586 /* Main.storyboard */,
+				3F0D29261A15DA7D00841586 /* Images.xcassets */,
+				3F0D29281A15DA7D00841586 /* LaunchScreen.xib */,
+				3F0D291E1A15DA7D00841586 /* gameDog.xcdatamodeld */,
+				3F0D291A1A15DA7D00841586 /* Supporting Files */,
+			);
+			path = gameDog;
+			sourceTree = "<group>";
+		};
+		3F0D291A1A15DA7D00841586 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3F0D29BA1A15FEDD00841586 /* dog2.png */,
+				3F0D29B81A15FC1500841586 /* ddog.png */,
+				3F0D29B61A15F58400841586 /* bg.png */,
+				3F0D291B1A15DA7D00841586 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3F0D29321A15DA7E00841586 /* gameDogTests */ = {
+			isa = PBXGroup;
+			children = (
+				3F0D29351A15DA7E00841586 /* gameDogTests.swift */,
+				3F0D29331A15DA7E00841586 /* Supporting Files */,
+			);
+			path = gameDogTests;
+			sourceTree = "<group>";
+		};
+		3F0D29331A15DA7E00841586 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3F0D29341A15DA7E00841586 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3F0D29161A15DA7D00841586 /* gameDog */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F0D29391A15DA7E00841586 /* Build configuration list for PBXNativeTarget "gameDog" */;
+			buildPhases = (
+				3F0D29131A15DA7D00841586 /* Sources */,
+				3F0D29141A15DA7D00841586 /* Frameworks */,
+				3F0D29151A15DA7D00841586 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = gameDog;
+			productName = gameDog;
+			productReference = 3F0D29171A15DA7D00841586 /* gameDog.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3F0D292E1A15DA7E00841586 /* gameDogTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F0D293C1A15DA7E00841586 /* Build configuration list for PBXNativeTarget "gameDogTests" */;
+			buildPhases = (
+				3F0D292B1A15DA7E00841586 /* Sources */,
+				3F0D292C1A15DA7E00841586 /* Frameworks */,
+				3F0D292D1A15DA7E00841586 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F0D29311A15DA7E00841586 /* PBXTargetDependency */,
+			);
+			name = gameDogTests;
+			productName = gameDogTests;
+			productReference = 3F0D292F1A15DA7E00841586 /* gameDogTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3F0D290F1A15DA7D00841586 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = app;
+				TargetAttributes = {
+					3F0D29161A15DA7D00841586 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					3F0D292E1A15DA7E00841586 = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = 3F0D29161A15DA7D00841586;
+					};
+				};
+			};
+			buildConfigurationList = 3F0D29121A15DA7D00841586 /* Build configuration list for PBXProject "gameDog" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3F0D290E1A15DA7D00841586;
+			productRefGroup = 3F0D29181A15DA7D00841586 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3F0D29161A15DA7D00841586 /* gameDog */,
+				3F0D292E1A15DA7E00841586 /* gameDogTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3F0D29151A15DA7D00841586 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F0D29251A15DA7D00841586 /* Main.storyboard in Resources */,
+				3F0D29B91A15FC1500841586 /* ddog.png in Resources */,
+				3F0D292A1A15DA7D00841586 /* LaunchScreen.xib in Resources */,
+				3F0D29B71A15F58400841586 /* bg.png in Resources */,
+				3F0D29271A15DA7D00841586 /* Images.xcassets in Resources */,
+				3F0D29BB1A15FEDD00841586 /* dog2.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F0D292D1A15DA7E00841586 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3F0D29131A15DA7D00841586 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F0D29221A15DA7D00841586 /* ViewController.swift in Sources */,
+				3F0D29201A15DA7D00841586 /* gameDog.xcdatamodeld in Sources */,
+				3F0D291D1A15DA7D00841586 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F0D292B1A15DA7E00841586 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F0D29361A15DA7E00841586 /* gameDogTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3F0D29311A15DA7E00841586 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3F0D29161A15DA7D00841586 /* gameDog */;
+			targetProxy = 3F0D29301A15DA7E00841586 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3F0D29231A15DA7D00841586 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F0D29241A15DA7D00841586 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3F0D29281A15DA7D00841586 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F0D29291A15DA7D00841586 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3F0D29371A15DA7E00841586 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3F0D29381A15DA7E00841586 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3F0D293A1A15DA7E00841586 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = gameDog/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3F0D293B1A15DA7E00841586 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = gameDog/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3F0D293D1A15DA7E00841586 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = gameDogTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/gameDog.app/gameDog";
+			};
+			name = Debug;
+		};
+		3F0D293E1A15DA7E00841586 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = gameDogTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/gameDog.app/gameDog";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3F0D29121A15DA7D00841586 /* Build configuration list for PBXProject "gameDog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F0D29371A15DA7E00841586 /* Debug */,
+				3F0D29381A15DA7E00841586 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F0D29391A15DA7E00841586 /* Build configuration list for PBXNativeTarget "gameDog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F0D293A1A15DA7E00841586 /* Debug */,
+				3F0D293B1A15DA7E00841586 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F0D293C1A15DA7E00841586 /* Build configuration list for PBXNativeTarget "gameDogTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F0D293D1A15DA7E00841586 /* Debug */,
+				3F0D293E1A15DA7E00841586 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3F0D291E1A15DA7D00841586 /* gameDog.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3F0D291F1A15DA7D00841586 /* gameDog.xcdatamodel */,
+			);
+			currentVersion = 3F0D291F1A15DA7D00841586 /* gameDog.xcdatamodel */;
+			path = gameDog.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 3F0D290F1A15DA7D00841586 /* Project object */;
+}

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F0D29C01A16041A00841586 /* ddog.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F0D29BD1A16041A00841586 /* ddog.png */; };
+		3F0D29C11A16041A00841586 /* dog.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3F0D29BE1A16041A00841586 /* dog.jpeg */; };
+		3F0D29C21A16041A00841586 /* dog2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F0D29BF1A16041A00841586 /* dog2.png */; };
 		3F45789D1A0C9C0E00D89521 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F45789C1A0C9C0E00D89521 /* AppDelegate.swift */; };
 		3F4578A01A0C9C0E00D89521 /* animationGame.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3F45789E1A0C9C0E00D89521 /* animationGame.xcdatamodeld */; };
 		3F4578A21A0C9C0E00D89521 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4578A11A0C9C0E00D89521 /* ViewController.swift */; };
@@ -27,6 +30,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F0D29BD1A16041A00841586 /* ddog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ddog.png; sourceTree = "<group>"; };
+		3F0D29BE1A16041A00841586 /* dog.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dog.jpeg; sourceTree = "<group>"; };
+		3F0D29BF1A16041A00841586 /* dog2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dog2.png; sourceTree = "<group>"; };
 		3F4578971A0C9C0E00D89521 /* animationGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = animationGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F45789B1A0C9C0E00D89521 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F45789C1A0C9C0E00D89521 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +64,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F0D29BC1A16041A00841586 /* imageDog */ = {
+			isa = PBXGroup;
+			children = (
+				3F0D29BD1A16041A00841586 /* ddog.png */,
+				3F0D29BE1A16041A00841586 /* dog.jpeg */,
+				3F0D29BF1A16041A00841586 /* dog2.png */,
+			);
+			name = imageDog;
+			path = ../../imageDog;
+			sourceTree = "<group>";
+		};
 		3F45788E1A0C9C0E00D89521 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +102,7 @@
 				3F4578A61A0C9C0E00D89521 /* Images.xcassets */,
 				3F4578A81A0C9C0E00D89521 /* LaunchScreen.xib */,
 				3F45789E1A0C9C0E00D89521 /* animationGame.xcdatamodeld */,
+				3F0D29BC1A16041A00841586 /* imageDog */,
 				3F45789A1A0C9C0E00D89521 /* Supporting Files */,
 			);
 			path = animationGame;
@@ -195,9 +213,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F0D29C11A16041A00841586 /* dog.jpeg in Resources */,
 				3F4578A51A0C9C0E00D89521 /* Main.storyboard in Resources */,
+				3F0D29C01A16041A00841586 /* ddog.png in Resources */,
 				3F4578AA1A0C9C0E00D89521 /* LaunchScreen.xib in Resources */,
 				3F4578A71A0C9C0E00D89521 /* Images.xcassets in Resources */,
+				3F0D29C21A16041A00841586 /* dog2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +430,7 @@
 				3F4578BB1A0C9C0F00D89521 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3F4578BC1A0C9C0F00D89521 /* Build configuration list for PBXNativeTarget "animationGameTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +439,7 @@
 				3F4578BE1A0C9C0F00D89521 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
