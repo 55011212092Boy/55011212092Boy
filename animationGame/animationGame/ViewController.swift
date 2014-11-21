@@ -26,7 +26,7 @@ class ViewController: UIViewController,UICollisionBehaviorDelegate {
         UIView.animateWithDuration(0.5){
             collidingView.backgroundColor = UIColor.blueColor()
         }
-        /*var firstContact = false
+        var firstContact = false
         if(!firstContact){
             firstContact = true
             
@@ -39,7 +39,7 @@ class ViewController: UIViewController,UICollisionBehaviorDelegate {
             
             let attach = UIAttachmentBehavior(item: collidingView, attachedToItem:square)
             animator.addBehavior(attach)
-        }*/
+        }
     }
     
     func getRandomColor() -> UIColor{
@@ -77,7 +77,7 @@ class ViewController: UIViewController,UICollisionBehaviorDelegate {
        
         dog2 = UIImageView()
         dog2.image = UIImage(named: "dog2.png")
-        dog2.frame = CGRectMake(20, 90, 100, 100)
+        dog2.frame = CGRectMake(100, 90, 100, 100)
         self.view.addSubview(dog2)
         
         animator = UIDynamicAnimator(referenceView: view)
@@ -96,7 +96,7 @@ class ViewController: UIViewController,UICollisionBehaviorDelegate {
         
         //ชนแล้วเด้ง
         let itemBehaviour = UIDynamicItemBehavior(items: [dog2])
-        itemBehaviour.elasticity = 0.5
+        itemBehaviour.elasticity = 0.7
         animator.addBehavior(itemBehaviour)
         
         self.panGesture = UIPanGestureRecognizer(target: self, action: "panning:")
