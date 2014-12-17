@@ -32,8 +32,6 @@ class ViewController: UIViewController,UITableViewDataSource {
                 items.removeAll(keepCapacity: false)
                 tv.reloadData()
             }
-            
- 
         
     }
     @IBAction func addItem(sender: AnyObject) {
